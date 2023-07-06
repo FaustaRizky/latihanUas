@@ -40,6 +40,8 @@
                   <option value="{{ $user->id }}" {{ $post->user_id == $user->id? "selected": ""}}>{{ $user->username }}</option>
                   @endforeach
                 </select>
+
+
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Artikel</label>
@@ -48,6 +50,7 @@
             <button type="submit" class="btn btn-primary">Submit</button>
             <a class="btn btn-secondary" href="{{ site_url('Welcome/tampil') }}">Tampil</a>
         </form>
+        </div>
       </div>
     </div>
   </main>
